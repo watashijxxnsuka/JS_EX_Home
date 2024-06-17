@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>입력한 값만큼 오른쪽으로 이동시키기</title>
+</head>
+<style>
+  .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+  }
+</style>
+<body>
+  <div class="box"></div>
+  <script>
+    const box = document.getElementsByClassName
+    ('box')[0];
+
+    const distance = window.prompt('이동시킬 거리를 입력하세요.');
+
+    if(!isNaN(distance)) {
+      box.style.left = distance + 'px';
+    } else {
+      alert('숫자를 입력하세요')
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let sum = 0;
+
+    while(true) {
+      let userInput = window.prompt('숫자를 입력하세요.(end 입력시 종료)');
+
+      if(userInput.toLocaleLowerCase() === 'end')
+      break;
+
+      sum += parseInt(userInput)
+    }
+
+    document.write(`지금까지 입력한 숫자의 총합: ${sum}`);
+  </script>
+</body>
+</html>

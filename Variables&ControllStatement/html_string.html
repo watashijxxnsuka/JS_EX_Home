@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹 문서 조작</title>
+</head>
+<body>
+  <div id="wrapper"></div>
+  <script>
+    let htmlStr ="<h1>hello<h1>";
+
+    document.write(htmlStr);
+
+    const name = window.prompt("이름을 입력하세요");
+
+    //ES5
+    document.write("<h2>" + name + "</h2>");
+    //ES6
+    document.write(`<h3>${name}<h3>`);
+
+    if(window.confirm(`${name}이 맞습니까?`)) {
+      window.alert(`${name}이 정상 입력되었습니다.`)
+    } else {
+      window.alert('입력이 취소됐습니다.')
+    }
+
+    let htmlStr2 = "";
+    htmlStr2 += `
+    <table style = 'border: 1px solid black;
+    border collapse: collapse;'>
+      <tr>
+        <td style='border: 1px solid black;'>${name}</td>
+        <td style='border: 1px solid black;'>${name}</td>
+        <td style='border: 1px solid black;'>${name}</td>
+      </tr>
+    <table>
+    `;
+
+    let div = document.getElementById('wrapper');
+    console.log(div);
+    console.log(typeof div);
+
+    div.innerHTML = htmlStr2;
+
+    div.style.backgroundColor = 'aqua';
+    div.style.color = "white";
+    
+  </script>
+</body>
+</html>

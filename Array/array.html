@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const arr = ['hello', 100, false, null, {
+            val1: 1,
+            val2: 2
+        }];
+
+    console.log(arr);
+
+    console.log(arr[0]);
+    console.log(arr[1]);
+    console.log(arr[2]);
+    console.log(arr[3]);
+    console.log(arr[4]);
+
+    const arr2 = [];
+
+    arr2.push('a');
+    arr2.push('true');
+
+    console.log(arr2.length);
+
+    console.log('---------------------')
+
+    for(let i = 0; i < arr2.length; i++) {
+      console.log(arr2[i]);
+    }
+
+    console.log('---------------------')
+
+    for(let element of arr2) {
+      console.log(element);
+    }
+  </script>
+</body>
+</html>

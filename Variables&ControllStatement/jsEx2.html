@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .box {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background: lightcoral;
+  }
+</style>
+<body>
+  <div class="box"></div>
+  <script>
+    const box = document.getElementsByClassName('box')[0];
+
+    const size = window.prompt('증가시킬 크기를 입력하세요.');
+
+    if(!isNaN(size)) {
+      box.style.transitionProperty = 'width';
+      box.style.transitionDuration = '10s';
+      box.style.width = size + 'px';
+    } else {
+      prompt('숫자를 입력하세요.')
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>연산자</title>
+    </head>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <body>
+      <div class="box"></div>
+        <script>
+            const num1 = 10;
+            const num2 = 20;
+            let numStr = '10';
+            const str = 'aaaa';
+
+            console.log(`num1 + num2 = ${num1 + num2}`);
+            console.log(`num1 - num2 = ${num1 - num2}`);
+            console.log(`num1 * num2 = ${num1 * num2}`);
+            console.log(`num1 / num2 = ${num1 / num2}`);
+            console.log(`num1 % num2 = ${num1 % num2}`);
+
+            console.log(`numStr + num2 = ${numStr + num2}`);
+            console.log(`numStr - num2 = ${numStr - num2}`);
+            console.log(`numStr * num2 = ${numStr * num2}`);
+            console.log(`numStr / num2 = ${numStr / num2}`);
+            console.log(`numStr % num2 = ${numStr % num2}`);
+            console.log('-------------------------------');
+
+            console.log(`str + num2 = ${str + num2}`);
+            console.log(`str - num2 = ${str - num2}`);
+            console.log(`str * num2 = ${str * num2}`);
+            console.log(`str / num2 = ${str / num2}`);
+            console.log(`str % num2 = ${str % num2}`);
+            console.log('-------------------------------');
+
+            let num3 = 10;
+
+            console.log(`num3 += 10 = ${num3 += 10}`);
+            console.log(`num3 -= 10 = ${num3 -= 10}`);
+            console.log(`num3 *= 10 = ${num3 *= 10}`);
+            console.log(`num3 /= 10 = ${num3 /= 10}`);
+            console.log(`num3 %= 10 = ${num3 %= 10}`);
+            console.log('-------------------------------');
+
+            let num4 = 10;
+
+            console.log(`num4-- = ${num4--}`);
+            console.log(`++num4 = ${++ num4}`);
+
+            console.log(`++numStr = ${++ numStr}`);
+            console.log('-------------------------------');
+
+            const num5 = 101;
+            const numStr2 = "101";
+
+            console.log(`num5 == numStr2 => ${num5 == numStr2}`);
+            console.log(`num5 <= numStr2 => ${num5 <= numStr2}`);
+
+            console.log(`num5 === numStr2 => ${num5 === numStr2}`);
+
+            let box = document.getElementsByClassName("box")[0];
+
+            num5 === numStr2 
+            ? box.style.backgroundColor = 'red' 
+            : box.style.backgroundColor = 'aqua';
+        </script>
+    </body>
+</html>
